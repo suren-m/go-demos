@@ -22,6 +22,21 @@
 
 6. Move `main.go` into `app` dir and run from there.
 
+## Use external Modules
+
+1. import `rsc.io/quote` and call `quote.Go()`
+
+2. To install the module, Run `go mod tidy` to update `go.mod` and include `go.sum`
+
+> see: https://github.com/rsc/quote/tree/v4.0.1
+> also: https://pkg.go.dev/rsc.io/quote/v4
+
+3. Navigate to `GOPATH` to show the location of source code for quote in local system (`go/pkg/mod/rsc.io/quote@vx.x.x`)
+
+## Debug the project in vs code
+
+1. InmsSetup launch config
+
 ## Create separate files under same package to explore basic constructs
 
 1. Data types

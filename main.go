@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
 
 func main() {
-	fmt.Println("Hello")
-
+	// msg := "world"
+	// for msg == "world" {
+	// 	fmt.Println("Hello", msg)
+	// }
+	fmt.Println(quote.Go())
 }
