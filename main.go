@@ -7,13 +7,13 @@ import (
 )
 
 func main() {
-	var greeting string
-	greeting = "hello"
-	audience := "world"
-	fmt.Println(greeting, audience)
+
+	fmt.Println("hello")
 
 	// calling an exported func from external package
 	fmt.Println(quote.Go())
 
 	print_json()
+
+	pointer_printer()
 }
