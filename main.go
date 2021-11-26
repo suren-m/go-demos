@@ -7,9 +7,13 @@ import (
 )
 
 func main() {
-	// msg := "world"
-	// for msg == "world" {
-	// 	fmt.Println("Hello", msg)
-	// }
+	var greeting string
+	greeting = "hello"
+	audience := "world"
+	fmt.Println(greeting, audience)
+
+	// calling an exported func from external package
 	fmt.Println(quote.Go())
+
+	print_json()
 }
