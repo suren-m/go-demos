@@ -1,4 +1,4 @@
-package main
+package services
 
 import (
 	"encoding/json"
@@ -16,12 +16,14 @@ func delay_call(delay int) {
 	delayurl := fmt.Sprintf("%s/%s", _delayurl, strconv.Itoa(delay))
 	log.Println("calling ", delayurl)
 	http.Get(delayurl)
+	log.Println("done with delay call")
 }
 
-func print_json() {
+func Print_Json() {
 
-	go delay_call(5)
-	//delay_call(5)
+	go delay_call(3)
+
+	log.Println("resuming")
 
 	// Tuple based pattern for error handling
 	resp, err := http.Get(_jsonurl)

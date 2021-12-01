@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	"rsc.io/quote"
+
+	"services"
 )
 
 func main() {
@@ -13,7 +15,6 @@ func main() {
 	// calling an exported func from external package
 	fmt.Println(quote.Go())
 
-	print_json()
+	services.Print_Json()
 
-	pointer_printer()
 }
